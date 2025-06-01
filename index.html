@@ -1,80 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PVARISAN | Professional Virtual Assistance</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PVARISAN | Professional Virtual Assistance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo-placeholder.png" alt="PVARISAN Logo" />
-                <h1>PVARISAN</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="images/logo-placeholder.png" alt="PVARISAN Logo" />
+        <span>PVARISAN</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Professional Virtual Assistance<br />Resource Integrating Services Assistance Network</h1>
+      <p>Boost your productivity and focus on growth. We handle your administrative and sales support efficiently.</p>
+      <a href="#contact" class="btn btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <section id="services" class="services section-padding">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/admin-icon.svg" alt="Admin Support Icon" />
+          <h3>Admin Support</h3>
+          <p>Calendar management, email handling, data entry, and more to keep your workflow smooth.</p>
         </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h2>Your Professional Virtual Assistance Partner</h2>
-            <p>Boost your productivity and focus on what matters. We handle your administrative and sales support efficiently.</p>
-            <a href="#contact" class="btn-primary">Get Started</a>
+        <div class="service-card">
+          <img src="images/sales-icon.svg" alt="Sales Assistance Icon" />
+          <h3>Sales Assistance</h3>
+          <p>Lead generation, follow-ups, and commission-based sales closure tailored for your business.</p>
         </div>
-    </section>
-
-    <section id="services" class="services container">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Admin Support</h3>
-                <p>Calendar management, email handling, data entry, and more to keep your workflow smooth.</p>
-            </div>
-            <div class="card">
-                <h3>Sales Assistance</h3>
-                <p>Lead generation, follow-ups, and commission-based sales closure tailored for your business.</p>
-            </div>
-            <div class="card">
-                <h3>Collaboration</h3>
-                <p>Seamless integration with your team using top productivity tools for efficient teamwork.</p>
-            </div>
+        <div class="service-card">
+          <img src="images/collaboration-icon.svg" alt="Collaboration Icon" />
+          <h3>Collaboration</h3>
+          <p>Seamless integration with your team using top productivity tools for efficient teamwork.</p>
         </div>
-    </section>
-
-    <section id="about" class="about container">
-        <h2>About PVARISAN</h2>
-        <p>PVARISAN (Professional Virtual Assistance Resource Integrating Services Assistance Network) is your trusted partner providing high-quality virtual assistant services designed for growing businesses. Our mission is to streamline your operations so you can focus on growth and innovation.</p>
-    </section>
-
-    <section id="contact" class="contact container">
-        <h2>Contact Us</h2>
-        <form action="mailto:contact@pvarisan.com" method="post" enctype="text/plain">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your Name" required />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="your.email@example.com" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-            <button type="submit" class="btn-primary">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2025 PVARISAN. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+      </div>
+    <
