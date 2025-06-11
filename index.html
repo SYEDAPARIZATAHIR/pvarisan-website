@@ -2,21 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PVARISAN | Professional Virtual Assistance</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>PVARISAN | Premium Virtual Assistance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #0e76a8;
+      --secondary-color: #f9fafc;
+      --text-color: #2e2e2e;
+      --accent-color: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--secondary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: var(--accent-color);
+      padding: 20px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('images/hero-placeholder.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: var(--primary-color);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0b5e88;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .services .grid {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 30px 0;
+      color: #555;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      background: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container header-container">
-      <a href="#" class="logo">
+  <header>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo">
         <img src="images/logo-placeholder.png" alt="PVARISAN Logo" />
-        <span>PVARISAN</span>
-      </a>
+        <h2>PVARISAN</h2>
+      </div>
       <nav>
-        <ul class="nav-links">
+        <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -26,31 +161,62 @@
   </header>
 
   <section class="hero">
-    <div class="container hero-content">
-      <h1>Professional Virtual Assistance<br />Resource Integrating Services Assistance Network</h1>
-      <p>Boost your productivity and focus on growth. We handle your administrative and sales support efficiently.</p>
-      <a href="#contact" class="btn btn-primary">Get Started</a>
+    <div class="container">
+      <h1>Your Premium Virtual Assistance Partner</h1>
+      <p>We help entrepreneurs and businesses grow by handling their admin and sales support seamlessly.</p>
+      <a href="#contact" class="btn">Start Today</a>
     </div>
   </section>
 
-  <section id="services" class="services section-padding">
+  <section id="services" class="services">
     <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <img src="images/admin-icon.svg" alt="Admin Support Icon" />
+      <h2 style="text-align: center; margin-bottom: 40px;">Our Services</h2>
+      <div class="grid">
+        <div class="card">
           <h3>Admin Support</h3>
-          <p>Calendar management, email handling, data entry, and more to keep your workflow smooth.</p>
+          <p>Email, calendar, travel coordination, research & documentation.</p>
         </div>
-        <div class="service-card">
-          <img src="images/sales-icon.svg" alt="Sales Assistance Icon" />
+        <div class="card">
           <h3>Sales Assistance</h3>
-          <p>Lead generation, follow-ups, and commission-based sales closure tailored for your business.</p>
+          <p>Lead generation, CRM management, follow-ups & proposal creation.</p>
         </div>
-        <div class="service-card">
-          <img src="images/collaboration-icon.svg" alt="Collaboration Icon" />
-          <h3>Collaboration</h3>
-          <p>Seamless integration with your team using top productivity tools for efficient teamwork.</p>
+        <div class="card">
+          <h3>Operations Management</h3>
+          <p>Process building, team coordination, reporting & analytics.</p>
         </div>
       </div>
-    <
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 20px;">About PVARISAN</h2>
+      <p style="max-width: 800px; margin: auto; text-align: center;">
+        At PVARISAN, we bring together highly skilled virtual assistants to support founders, startups, and scaling businesses. We value time, trust, and excellence. With us, you gain a reliable extension of your team.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 20px;">Contact Us</h2>
+      <form action="mailto:contact@pvarisan.com" method="post" enctype="text/plain" style="max-width: 600px; margin: auto;">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PVARISAN. All rights reserved.</p>
+  </footer>
+</body>
+</html>
