@@ -1,110 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Professional VARISAN</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PVARISAN | Professional Virtual Assistance</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Professional VARISAN</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="home" class="hero">
-    <div class="container">
-      <h2>Your Trusted Partner for Professional Services</h2>
-      <p>Save time. Maximize impact. Delegate smart.</p>
-      <a href="#services" class="btn">Explore Services</a>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Admin Support</h3>
-          <p>Email, calendar, document handling, and more.</p>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="PVARISAN Logo" />
+                <h1>PVARISAN</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="service-card">
-          <h3>Marketing Assistance</h3>
-          <p>Social media, content creation, SEO and PPC support.</p>
-        </div>
-        <div class="service-card">
-          <h3>Finance & Bookkeeping</h3>
-          <p>Basic accounting, invoicing, reporting tasks.</p>
-        </div>
-        <div class="service-card">
-          <h3>Custom Requests</h3>
-          <p>Tailored solutions for your specific needs.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="pricing" class="section">
-    <div class="container">
-      <h2>Pricing Plans</h2>
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>Part-Time</h3>
-          <p>$4/hr (4 hrs/day)</p>
-          <ul>
-            <li>Email & Calendar</li>
-            <li>Admin Tasks</li>
-            <li>Social Media</li>
-          </ul>
+    <section class="hero">
+        <div class="container">
+            <h2>Your Professional Virtual Assistance Partner</h2>
+            <p>Boost your productivity and focus on what matters. We handle your administrative and sales support efficiently.</p>
+            <a href="#contact" class="btn-primary">Get Started</a>
         </div>
-        <div class="pricing-card">
-          <h3>Full-Time</h3>
-          <p>$6/hr (8 hrs/day)</p>
-          <ul>
-            <li>Full Support</li>
-            <li>Marketing Help</li>
-            <li>Custom Projects</li>
-          </ul>
+    </section>
+
+    <section id="services" class="services container">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Admin Support</h3>
+                <p>Calendar management, email handling, data entry, and more to keep your workflow smooth.</p>
+            </div>
+            <div class="card">
+                <h3>Sales Assistance</h3>
+                <p>Lead generation, follow-ups, and commission-based sales closure tailored for your business.</p>
+            </div>
+            <div class="card">
+                <h3>Collaboration</h3>
+                <p>Seamless integration with your team using top productivity tools for efficient teamwork.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Professional VARISAN</h2>
-      <p>We provide dedicated professional services for individuals, entrepreneurs, and businesses across industries. Our focus is on efficiency, quality, and building lasting relationships.</p>
-    </div>
-  </section>
+    <section id="about" class="about container">
+        <h2>About PVARISAN</h2>
+        <p>PVARISAN (Professional Virtual Assistance Resource Integrating Services Assistance Network) is your trusted partner providing high-quality virtual assistant services designed for growing businesses. Our mission is to streamline your operations so you can focus on growth and innovation.</p>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section id="contact" class="contact container">
+        <h2>Contact Us</h2>
+        <form action="mailto:contact@pvarisan.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required />
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Professional VARISAN. All rights reserved.</p>
-    </div>
-  </footer>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your.email@example.com" required />
 
-  <script src="script.js"></script>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn-primary">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 PVARISAN. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
